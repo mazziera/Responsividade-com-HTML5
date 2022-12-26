@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/Social-Media-Icons-Glossy-Social-HTML5.ico">
+    <title>Imagens Flexíveis e Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou
+        simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+
+    <picture>
+        <!-- A ordem dos sources necessita ser da menor para a maior e a imagem original, por último -->
+        <source media="(max-width:750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="foto grande">
+    </picture>
+
+    <h1>Mídias- Reproduzindo Aúdios</h1>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+
+    <audio controls preload="auto">
+        <source src="midias/Winning-NEFFEX.ogg" type="audio/ogg">
+        <source src="midias/Winning-NEFFEX.wav" type="audio/wav">
+        <source src="midias/Winning - NEFFEX.mp3" type="audio/mp3">
+       
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio.
+            <a href="midias/Winning - NEFFEX.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+
+    <!-- Além de adicionar a mídia, deve-se adicionar o parâmetro "controls" para habilitar o player no site e
+        o "autoplay" para habilitar a repodução da música automaticamente 
+        <audio src="midias/Winning - NEFFEX.mp3" controls autoplay></audio> 
+    -->
+
+
+</body>
+</html>
